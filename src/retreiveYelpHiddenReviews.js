@@ -4,7 +4,7 @@ const request = require('request');
 var path = require("path");
 
 export function retreiveYelpHiddenReviews(result){
-  const res = fs.readFileSync(`C:/Users/Shane/Desktop/github-by-stars/html_src/YelpHiddenReviews_1-26-2020.html`, { encoding: 'utf-8' })
+  const res = fs.readFileSync(`C:/Users/Shane/Desktop/github-by-stars/html_src/yelp_hidden.html`, { encoding: 'utf-8' })
   const $ = cheerio.load(res)
   var els = $(`div.review`).toArray()
 
